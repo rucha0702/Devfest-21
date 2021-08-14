@@ -3,16 +3,65 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+:root {
+  --secondary: rgb(196, 192, 192);
+}
 body {
-  position: relative;
-  background: url('Ngo/Vector.png');
-  height: 100vh;
+  height: 80vh;
   width: 100%;
 }
-
-.container {
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.space {
+  margin: 10px;
+  padding: 10px;
+}
+.img-size {
+  width: 500px;
+}
+.navbar {
+  justify-content: space-between;
+}
+.title {
+  background: var(--secondary);
+}
+li {
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+  background: var(--secondary);
+}
+a {
+  text-decoration: none;
+}
+.section {
+  position: relative;
+  background: url('Ngo/Vector.png');
+  height: 100%;
+  width: 100%;
+}
+.container1 {
   position: absolute;
-  z-index: 1;
-  background: url();
+  /* z-index: 1; */
+  justify-content: space-between;
+  /* background: url('Ngo/Vector1.png'); */
+  height: 100%;
+  width: 80%;
+}
+.container2 {
+  position: absolute;
+  /* z-index: 1; */
+  top: 100%;
+  justify-content: space-between;
+  /* background: url('Ngo/Vector1.png'); */
+  height: 100%;
+  width: 80%;
+}
+.cont-left,
+.cont-right {
+  flex-direction: column;
+  flex: 0.5;
 }
