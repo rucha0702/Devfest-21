@@ -27,10 +27,23 @@ header .navitem ul{
 header .navitem ul li{
     padding: 10px 3px;
     margin-right: 40px;
+    transition: all 0.5s ease;
 }
 
 header .navitem ul li a{
     text-decoration: none;
     cursor: pointer;
     color: #2BAFAF;
+    transition: all 0.5s ease;
+    font-size: 1rem;
+    font-family: 'Circe Light';
+}
+
+header .navitem ul li .active{
+    font-family: 'Circe Regular';
+}
+
+header .navitem ul li:hover{
+    transform: translateY(-2.5px);
+    // transform: scale(1.01);
 }

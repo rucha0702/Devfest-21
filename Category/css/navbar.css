@@ -34,11 +34,26 @@ header .navitem ul {
 header .navitem ul li {
   padding: 10px 3px;
   margin-right: 40px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 header .navitem ul li a {
   text-decoration: none;
   cursor: pointer;
   color: #2BAFAF;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  font-size: 1rem;
+  font-family: 'Circe Light';
+}
+
+header .navitem ul li .active {
+  font-family: 'Circe Regular';
+}
+
+header .navitem ul li:hover {
+  -webkit-transform: translateY(-2.5px);
+          transform: translateY(-2.5px);
 }
 /*# sourceMappingURL=navbar.css.map */
