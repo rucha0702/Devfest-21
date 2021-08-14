@@ -9,8 +9,14 @@
   --primary-dark: rgb(71, 138, 216);
 }
 body {
+  line-height: 1.5rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+}
+#home {
   height: 200vh;
   width: 100%;
+  position: relative;
 }
 .flex {
   display: flex;
@@ -32,6 +38,10 @@ body {
 }
 .navbar {
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: white;
 }
 .title {
   background: var(--secondary);
@@ -54,6 +64,10 @@ a {
   width: 100%;
 }
 .web-info h1 {
+  margin: 15px;
+  margin-left: 20px;
+}
+.web-info p {
   margin-left: 20px;
 }
 .container1 {
@@ -79,7 +93,7 @@ a {
   justify-content: space-between;
   /* background: url('Ngoector1.png'); */
   height: 80%;
-  width: 100%;
+  width: 90%;
 }
 .cont-left,
 .cont-right {
@@ -106,5 +120,12 @@ a {
   background: var(--primary);
   margin-left: 50px;
   margin-bottom: 50px;
-  border-radius: 30px 30px 30px 0;
+  border-radius: 40px 40px 40px 0;
+}
+.donations span {
+  /* content: ''; */
+  padding: 12px 20px;
+  background: white;
+  margin: 30px;
+  transform: rotateY('90deg');
 }
