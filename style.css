@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'januaryregular';
+  src: url('/Category/fonts/january-webfont.woff2') format('woff2'),
+       url('/Category/fonts/january-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +21,8 @@ body {
   line-height: 1.5rem;
   font-family: 'Lato', sans-serif;
   font-size: 1.1rem;
+  font-family: 'Circe Regular';
+  background: #fbfbfb;
 }
 #home {
   height: 200vh;
@@ -32,25 +43,39 @@ body {
 }
 .btn {
   padding: 15px 30px;
-  background: var(--primary);
+  background: var(--primary-dark);
   border: none;
   margin: 20px;
   font-size: 1.2rem;
   color: white;
-  text-shadow: 2px 2px 5px black;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.14);
   font-weight: 600;
   cursor: pointer;
+  border-radius: 10px;
 }
+
+.btn:hover {
+  background: #fbfbfb;
+  color: var(--primary-dark);
+  border-radius: 10px;
+  margin: 20px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
 .shadow {
   color: white;
-  text-shadow: 2px 2px 5px black;
+  text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.14);
+  font-family: 'Circe Regular';
 }
 .navbar {
   justify-content: space-between;
   position: sticky;
   top: 0;
   z-index: 2;
-  background: white;
+  background: #fbfbfb;
 }
 .navbar ul li a {
   text-decoration: none;
@@ -63,6 +88,9 @@ body {
 }
 .title {
   padding: 10px 20px;
+  font-size: 1.5rem;
+  color: #2bafaf;
+  font-weight: bold;
 }
 li {
   list-style: none;
@@ -92,9 +120,12 @@ a {
   margin: 15px;
   margin-left: 20px;
   color: var(--primary-dark);
+  font-family: 'Circe Regular';
 }
 .web-info p {
   margin-left: 20px;
+  font-family: 'Circe Regular';
+  font-weight: lighter;
 }
 .container1 {
   position: absolute;
@@ -139,6 +170,7 @@ a {
 
 .about-info {
   margin: 60px 0;
+  color: #193C3C;
 }
 .donations {
   height: 200px;
@@ -150,8 +182,31 @@ a {
 }
 .donations span {
   /* content: ''; */
-  padding: 12px 20px;
+
+  /* White Boxes */
+  display: flex;
   background: white;
   margin: 30px;
   transform: rotateY('90deg');
+  color: var(--primary-dark);
+  transform: rotate(45deg);
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.donations h1 {
+  /* Content for White Boxes */
+  display: flex;
+  transform: rotate(-45deg);
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: translateX(0.5rem);
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
 }
