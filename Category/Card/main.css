@@ -18,23 +18,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
-<<<<<<< HEAD
-} */
-#sw,
-#ed,
-#fd,
-#wm,
-#sp,
-#re {
-  display: none;
-}
-=======
 }
 
->>>>>>> 98ce7062aaafa3e079f333d78d00786205c54d71
 .card {
   color: white;
-  background: #0f78e8;
+  background: #0F78E8;
   background-size: cover;
   margin-top: 20vh;
   margin-left: 2em;
@@ -51,7 +39,7 @@ body {
 
 .card:hover {
   -webkit-box-shadow: 0px 20px 36px -10px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 20px 36px -10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 20px 36px -10px rgba(0, 0, 0, 0.25);
 }
 
 .card_content {
@@ -71,17 +59,17 @@ body {
 }
 
 .card_title::after {
-  content: ' ';
+  content: " ";
   position: absolute;
   height: 4px;
-  left: calc((var(--padding)) * -1);
+  left: calc((var(--padding))*-1);
   bottom: 0;
   width: calc(100% + var(--padding));
   background: #fff;
   -webkit-transform-origin: left;
-  transform-origin: left;
+          transform-origin: left;
   -webkit-transform: scaleX(0);
-  transform: scaleX(0);
+          transform: scaleX(0);
   -webkit-transition: -webkit-transform 500ms ease;
   transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
@@ -94,7 +82,7 @@ body {
   text-decoration: none;
   color: black;
   background: #61d384;
-  padding: 0.5em 1.25em;
+  padding: .5em 1.25em;
   border-radius: 0.25em;
   margin-top: 10px;
   -webkit-transition: all 2s ease-in;
@@ -103,23 +91,18 @@ body {
 
 .card_title::after {
   -webkit-transform: scaleX(0);
-  transform: scaleX(0);
+          transform: scaleX(0);
 }
 
 .button:hover,
 .button:focus {
   background: white;
 }
-.align-center {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 
 @media (hover) {
   .card_content {
     -webkit-transform: translateY(50%);
-    transform: translateY(50%);
+            transform: translateY(50%);
     -webkit-transition: -webkit-transform 500ms ease;
     transition: -webkit-transform 500ms ease;
     transition: transform 500ms ease;
@@ -128,13 +111,13 @@ body {
   .card:hover .card_content,
   .card:focus-within .card_content {
     -webkit-transform: translateY(-20%);
-    transform: translateY(-20%);
+            transform: translateY(-20%);
     -webkit-transition-delay: 800ms;
-    transition-delay: 800ms;
+            transition-delay: 800ms;
   }
   .card:focus-within .card_content {
     -webkit-transition-duration: 0ms;
-    transition-duration: 0ms;
+            transition-duration: 0ms;
   }
   .card_content > *:not(.card_title) {
     opacity: 0;
@@ -145,17 +128,17 @@ body {
   .card:focus-within .card_content > *:not(.card_title) {
     opacity: 1;
     -webkit-transition-delay: 700ms;
-    transition-delay: 700ms;
+            transition-delay: 700ms;
   }
   .card:hover,
   .card:focus-within {
     -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+            transform: scale(1.05);
   }
   .card:hover .card_title::after,
   .card:focus-within .card_title::after {
     -webkit-transform: scaleX(1);
-    transform: scaleX(1);
+            transform: scaleX(1);
   }
 }
 /*# sourceMappingURL=main.css.map */
