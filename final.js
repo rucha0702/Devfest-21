@@ -1,5 +1,4 @@
-
- var obj = [
+var obj = [
     {
         "Name of Organization ": "Immaculate Heart of Mary Social Service Society",
         "Category": "A",
@@ -291,37 +290,28 @@
         "Worked with any State or National Government ": "Yes"
     }
 ]
+var myData= document.getElementsByClassName("card");
+var ctitle= document.getElementsByClassName("card_title");
+var cbody= document.getElementsByClassName("card_body");
 
-
-  var myData= document.getElementsByClassName("card");
-    var ctitle= document.getElementsByClassName("card_title");
-    var cbody= document.getElementsByClassName("card_body");
+for(let i=0;i<myData.length;i++)
+{
+    // var sel = document.getElementById("dropdown");
+    // console.log(sel.value);
+    // if(obj[i]["Operations State"]==="Maharashtra")
+   //myData[i].style.display="block"
+       myData[i].classList.add("card");
+    cbody[i].innerText= obj[i]["Operations State"];
+    ctitle[i].innerText=obj[i]["Name of Organization "]
     
-    for(let i=0;i<myData.length;i++)
-    {
-        var sel = document.getElementById("dropdown");
-        console.log(sel.value);
-        if(obj[i]["Operations State"]==="Maharashtra")
-       { myData[i].style.display="block"
-           myData[i].classList.add("card");
-        cbody[i].innerText= obj[i]["Operations State"];
-        ctitle[i].innerText=obj[i]["Name of Organization "]
-        
-        let li = document.createElement('p');
-        li.textContent = obj[i].Category;
-        myData[i].appendChild(li);}
-        else{
-            myData[i].style.display="none";
-        }
-            
-
-        //    let tag = document.createElement("p");
-        //    let text = document.createTextNode(obj[i].Category);
-        //    tag.appendChild(text);
-        //    myData.appendChild(tag);
-    
-             //create new li element
-             //add it to the ul element
-        
-    }
-
+    // let li = document.createElement('p');
+    // li.textContent = obj[i]["Thematic Area"];
+    // // li.style.width="100%";
+    // // li.style.display="flex";
+    // // li.style.justifyContent="center";
+    // li.classList.add("align-center");
+    // myData[i].appendChild(li);
+    // else{
+    //     myData[i].style.display="none";
+    // }
+}
