@@ -68,7 +68,7 @@ body {
 .shadow {
   color: white;
   text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.14);
-  font-family: 'Circe Regular';
+  font-family: 'Cardo', serif;
 }
 .navbar {
   justify-content: space-between;
@@ -120,12 +120,12 @@ a {
   margin: 15px;
   margin-left: 20px;
   color: var(--primary-dark);
-  font-family: 'Circe Regular';
+  font-family: 'Cardo', serif;
+  font-size: 3rem;
 }
 .web-info p {
   margin-left: 20px;
-  font-family: 'Circe Regular';
-  font-weight: lighter;
+  font-family: 'Cardo', serif;
 }
 .container1 {
   position: absolute;
