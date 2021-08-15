@@ -18,7 +18,7 @@
       <span class="title space">Name</span>
       <ul class="flex">
         <li><a href="index.html">Home</a></li>
-        <li><a href="categories.html">Category</a></li>
+        <li><a href="/Category/index.html">Category</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
@@ -27,15 +27,16 @@
         <div class="web-info flex">
           <h1>Website name</h1>
           <p>Giving makes us happier...</p>
-          <button class="btn">button</button>
+          <a href="#about" class="btn">About</a>
+          <!-- <button class="btn">button</button> -->
         </div>
         <div class="web-img">
           <img class="img-size" src="Ngo/Group 3.png" alt="group3" />
         </div>
       </div>
-      <div class="container2 flex">
+      <div id="about" class="container2 flex">
         <div class="cont-left flex space">
-          <h1>About</h1>
+          <h1 class="shadow">About</h1>
           <p class="about-info">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
             aperiam ex, saepe quia dicta dolor vitae dignissimos? Voluptatem,
@@ -54,5 +55,34 @@
       </div>
     </div>
     <script src="main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $('.btn').on('click', function (event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html,body').animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            900
+          );
+        }
+      });
+    </script>
+    <script>
+      const successCallback = (position) => {
+        console.log(position);
+      };
+      const errorCallback = (error) => {
+        console.error(error);
+      };
+
+      navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+    </script>
   </body>
 </html>
