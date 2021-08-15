@@ -1,11 +1,11 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-} */
+}
 
-/* body {
+body {
   background-color: #f2f2f2;
   font-family: 'Circe Regular';
   display: -webkit-box;
@@ -18,6 +18,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
+<<<<<<< HEAD
 } */
 #sw,
 #ed,
@@ -27,16 +28,19 @@
 #re {
   display: none;
 }
+=======
+}
+
+>>>>>>> 98ce7062aaafa3e079f333d78d00786205c54d71
 .card {
   color: white;
   background: #0f78e8;
   background-size: cover;
-  /* margin-top: 20vh; */
+  margin-top: 20vh;
   margin-left: 2em;
   margin-bottom: 5em;
   padding: 10rem 0 0;
-  /* max-width: 27ch; */
-  width: 24ch;
+  max-width: 27ch;
   border-radius: 1em;
   overflow: hidden;
   -webkit-transition: -webkit-transform 500ms ease;
