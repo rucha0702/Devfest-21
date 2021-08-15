@@ -1,4 +1,7 @@
 header {
+  position: relative;
+  z-index: 50;
+  background-color: #FBFBFB;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -13,6 +16,8 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 10vh;
+  -webkit-box-shadow: 0px 20px 28px -8px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 20px 28px -8px rgba(0, 0, 0, 0.05);
 }
 
 header .logo {
