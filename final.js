@@ -10,7 +10,7 @@ var obj = [
         "Worked with any State or National Government ": "Yes"
     },
     {
-        "Name of Organization ": "Indian Rugby Football Union",
+        "Name of Organization ": "IndianRugbyFootball Union",
         "Category": "A",
         "Donor Partner": "International Agency",
         "State of Registration": "Maharashtra",
@@ -30,7 +30,7 @@ var obj = [
         "Worked with any State or National Government ": "Yes"
     },
     {
-        "Name of Organization ": "Huda educational and Social Welfare Society",
+        "Name of Organization ": "Huda ESWS",
         "Category": "B",
         "Donor Partner": "Government",
         "State of Registration": "Uttar Pradesh",
@@ -40,7 +40,7 @@ var obj = [
         "Worked with any State or National Government ": "Yes"
     },
     {
-        "Name of Organization ": "Humana People to People India (HPPI)",
+        "Name of Organization ": "Humana People",
         "Category": "A",
         "Donor Partner": "Corporate",
         "State of Registration": "Delhi",
@@ -50,7 +50,7 @@ var obj = [
         "Worked with any State or National Government ": "Yes"
     },
     {
-        "Name of Organization ": "Centre for Socio-economic and environmental studies",
+        "Name of Organization ": "Centre for SE and ES",
         "Category": "A",
         "Donor Partner": "International Agency",
         "State of Registration": "Kerala",
@@ -60,7 +60,7 @@ var obj = [
         "Worked with any State or National Government ": "Yes"
     },
     {
-        "Name of Organization ": "Centre for Socio-economic and environmental studies",
+        "Name of Organization ": "Centre for SE and ES",
         "Category": "A",
         "Donor Partner": "International Agency",
         "State of Registration": "Kerala",
@@ -70,7 +70,7 @@ var obj = [
         "Worked with any State or National Government ": "Yes"
     },
     {
-        "Name of Organization ": "Centre for Socio-economic and environmental studies",
+        "Name of Organization ": "Centre for SE and ES",
         "Category": "A",
         "Donor Partner": "International Agency",
         "State of Registration": "Kerala",
@@ -80,7 +80,7 @@ var obj = [
         "Worked with any State or National Government ": "Yes"
     },
     {
-        "Name of Organization ": "Centre for Socio-economic and environmental studies",
+        "Name of Organization ": "Centre for SE and ES",
         "Category": "A",
         "Donor Partner": "International Agency",
         "State of Registration": "Kerala",
@@ -90,27 +90,7 @@ var obj = [
         "Worked with any State or National Government ": "Yes"
     },
     {
-        "Name of Organization ": "Centre for Socio-economic and environmental studies",
-        "Category": "A",
-        "Donor Partner": "International Agency",
-        "State of Registration": "Kerala",
-        "Thematic Area": "Research and Advocacy",
-        "Operations State": "Tamil Nadu",
-        "Worked with any Japanese Organization ": "Yes",
-        "Worked with any State or National Government ": "Yes"
-    },
-    {
-        "Name of Organization ": "Centre for Socio-economic and environmental studies",
-        "Category": "A",
-        "Donor Partner": "International Agency",
-        "State of Registration": "Kerala",
-        "Thematic Area": "Research and Advocacy",
-        "Operations State": "Telangana",
-        "Worked with any Japanese Organization ": "Yes",
-        "Worked with any State or National Government ": "Yes"
-    },
-    {
-        "Name of Organization ": "Centre for Socio-economic and environmental studies",
+        "Name of Organization ": "Centre for SE and ES",
         "Category": "A",
         "Donor Partner": "Government",
         "State of Registration": "Kerala",
@@ -120,7 +100,7 @@ var obj = [
         "Worked with any State or National Government ": "Yes"
     },
     {
-        "Name of Organization ": "Pravara Medical Trust ",
+        "Name of Organization ": "Pravara Medical ",
         "Category": "A",
         "Donor Partner": "Corporate",
         "State of Registration": "Maharashtra",
@@ -130,7 +110,7 @@ var obj = [
         "Worked with any State or National Government ": "Yes"
     },
     {
-        "Name of Organization ": "Progressive Life Center",
+        "Name of Organization ": "Progressive Life",
         "Category": "B",
         "Donor Partner": "Others",
         "State of Registration": "Maharashtra",
@@ -140,7 +120,7 @@ var obj = [
         "Worked with any State or National Government ": "No"
     },
     {
-        "Name of Organization ": "Preservation and Proliferation of Rural Resources and Nature(PRAN)",
+        "Name of Organization ": "PRAN",
         "Category": "A",
         "Donor Partner": "Corporate",
         "State of Registration": "Bihar",
@@ -150,7 +130,7 @@ var obj = [
         "Worked with any State or National Government ": "Yes"
     },
     {
-        "Name of Organization ": "JOINT WOMEN'S PROGRAMME",
+        "Name of Organization ": "Joint Women's Prog.",
         "Category": "B",
         "Donor Partner": "Government",
         "State of Registration": "Delhi",
@@ -160,7 +140,7 @@ var obj = [
         "Worked with any State or National Government ": "Yes"
     },
     {
-        "Name of Organization ": "PIPAL TREE FOUNDATION",
+        "Name of Organization ": "Pipal Tree Fdn.",
         "Category": "B",
         "Donor Partner": "Corporate",
         "State of Registration": "Maharashtra",
@@ -170,7 +150,7 @@ var obj = [
         "Worked with any State or National Government ": "Yes"
     },
     {
-        "Name of Organization ": "Paschim Sridharkati Janakalyan Sangha",
+        "Name of Organization ": "Paschim Sridharkati",
         "Category": "B",
         "Donor Partner": "International Agency",
         "State of Registration": "West Bengal",
@@ -180,7 +160,7 @@ var obj = [
         "Worked with any State or National Government ": "Yes"
     },
     {
-        "Name of Organization ": "parinaama development foundation",
+        "Name of Organization ": "parinaama Dev Fdn.",
         "Category": "B",
         "Donor Partner": "Government",
         "State of Registration": "Delhi",
@@ -190,7 +170,7 @@ var obj = [
         "Worked with any State or National Government ": "Yes"
     },
     {
-        "Name of Organization ": "ONKAR SEVA SANSTHAN",
+        "Name of Organization ": "Onkar Seva Sansthan",
         "Category": "B",
         "Donor Partner": "Government",
         "State of Registration": "Jharkhand",
@@ -210,7 +190,7 @@ var obj = [
         "Worked with any State or National Government ": "Yes"
     },
     {
-        "Name of Organization ": "National Skills Foundation of India",
+        "Name of Organization ": "National Skills Fdn.",
         "Category": "B",
         "Donor Partner": "Corporate",
         "State of Registration": "Haryana",
@@ -220,7 +200,7 @@ var obj = [
         "Worked with any State or National Government ": "Yes"
     },
     {
-        "Name of Organization ": "Mother Care Child Development Society",
+        "Name of Organization ": "MotherCareChild DS",
         "Category": "B",
         "Donor Partner": "Others",
         "State of Registration": "Delhi",
@@ -230,7 +210,7 @@ var obj = [
         "Worked with any State or National Government ": "No"
     },
     {
-        "Name of Organization ": "Lok Swasthya SEWA Trust",
+        "Name of Organization ": "Lok Swasthya SEWA",
         "Category": "B",
         "Donor Partner": "International Agency",
         "State of Registration": "Gujarat",
@@ -240,7 +220,7 @@ var obj = [
         "Worked with any State or National Government ": "Yes"
     },
     {
-        "Name of Organization ": "Karm Marg Charitable Society",
+        "Name of Organization ": "KarmMarg Charitable Society",
         "Category": "A",
         "Donor Partner": "Corporate",
         "State of Registration": "Delhi",
@@ -250,7 +230,7 @@ var obj = [
         "Worked with any State or National Government ": "No"
     },
     {
-        "Name of Organization ": "JOINT WOMEN'S PROGRAMME",
+        "Name of Organization ": "Joint Women's Prgm.",
         "Category": "B",
         "Donor Partner": "Government",
         "State of Registration": "Delhi",
@@ -269,26 +249,7 @@ var obj = [
         "Worked with any Japanese Organization ": "No",
         "Worked with any State or National Government ": "Yes"
     },
-    {
-        "Name of Organization ": "Centre for Socio-economic and environmental studies",
-        "Category": "A",
-        "Donor Partner": "Government",
-        "State of Registration": "Kerala",
-        "Thematic Area": "Livelihood",
-        "Operations State": "Tamil Nadu",
-        "Worked with any Japanese Organization ": "Yes",
-        "Worked with any State or National Government ": "Yes"
-    },
-    {
-        "Name of Organization ": "Centre for Socio-economic and environmental studies",
-        "Category": "A",
-        "Donor Partner": "Government",
-        "State of Registration": "Kerala",
-        "Thematic Area": "Livelihood",
-        "Operations State": "Telangana",
-        "Worked with any Japanese Organization ": "Yes",
-        "Worked with any State or National Government ": "Yes"
-    }
+
 ]
 var myData= document.getElementsByClassName("card");
 var ctitle= document.getElementsByClassName("card_title");

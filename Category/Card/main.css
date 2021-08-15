@@ -22,13 +22,13 @@ body {
 
 .card {
   color: white;
-  background: #0F78E8;
+  background: #0f78e8;
   background-size: cover;
   margin-top: 20vh;
   margin-left: 2em;
   margin-bottom: 5em;
   padding: 10rem 0 0;
-  max-width: 27ch;
+  width: 27ch;
   border-radius: 1em;
   overflow: hidden;
   -webkit-transition: -webkit-transform 500ms ease;
@@ -59,10 +59,10 @@ body {
 }
 
 .card_title::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   height: 4px;
-  left: calc((var(--padding))*-1);
+  left: calc((var(--padding)) * -1);
   bottom: 0;
   width: calc(100% + var(--padding));
   background: #fff;
@@ -82,7 +82,7 @@ body {
   text-decoration: none;
   color: black;
   background: #61d384;
-  padding: .5em 1.25em;
+  padding: 0.5em 1.25em;
   border-radius: 0.25em;
   margin-top: 10px;
   -webkit-transition: all 2s ease-in;
