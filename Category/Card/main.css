@@ -25,16 +25,20 @@ body {
   background: #0f78e8;
   background-size: cover;
   margin-top: 20vh;
-  margin-left: 2em;
   margin-bottom: 5em;
   padding: 10rem 0 0;
-  width: 27ch;
+  width: 22ch;
+  height: 300px;
   border-radius: 1em;
   overflow: hidden;
   -webkit-transition: -webkit-transform 500ms ease;
   transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
   transition: transform 500ms ease, -webkit-transform 500ms ease;
+}
+
+#category .card {
+  margin-left: 40px;
 }
 
 .card:hover {

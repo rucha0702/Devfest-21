@@ -1,6 +1,6 @@
 var obj = [
     {
-        "Name of Organization ": "Immaculate Heart of Mary Social Service Society",
+        "Name of Organization ": "Immaculate Heart",
         "Category": "A",
         "Donor Partner": "Corporate",
         "State of Registration": "Puducherry",
@@ -276,3 +276,34 @@ for(let i=0;i<myData.length;i++)
     //     myData[i].style.display="none";
     // }
 }
+var myData= document.getElementsByClassName("card");
+    var ctitle= document.getElementsByClassName("card_title");
+    var cbody= document.getElementsByClassName("card_body");
+    var sel = document.getElementById("dropdown");
+  
+   
+    sel.onclick= function(){
+        console.log(sel.value);
+        for(let i=0;i<myData.length;i++)
+        {
+        if(obj[i]["Operations State"]===sel.value)
+       { myData[i].style.display="block"
+           myData[i].classList.add("card");
+        cbody[i].innerText= obj[i]["Operations State"];
+        ctitle[i].innerText=obj[i]["Name of Organization "]
+        }
+        else{
+            myData[i].style.display="none";
+        }
+            
+    
+        //    let tag = document.createElement("p");
+        //    let text = document.createTextNode(obj[i].Category);
+        //    tag.appendChild(text);
+        //    myData.appendChild(tag);
+    
+             //create new li element
+             //add it to the ul element
+        
+    }
+    }

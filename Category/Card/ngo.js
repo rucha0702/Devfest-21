@@ -296,12 +296,14 @@
   var myData= document.getElementsByClassName("card");
     var ctitle= document.getElementsByClassName("card_title");
     var cbody= document.getElementsByClassName("card_body");
-    
-    for(let i=0;i<myData.length;i++)
-    {
-        var sel = document.getElementById("dropdown");
+    var sel = document.getElementById("dropdown");
+  
+   
+    sel.onclick= function(){
         console.log(sel.value);
-        if(obj[i]["Operations State"]==="Maharashtra")
+        for(let i=0;i<myData.length;i++)
+        {
+        if(obj[i]["Operations State"]===sel.value)
        { myData[i].style.display="block"
            myData[i].classList.add("card");
         cbody[i].innerText= obj[i]["Operations State"];
@@ -314,7 +316,7 @@
             myData[i].style.display="none";
         }
             
-
+    
         //    let tag = document.createElement("p");
         //    let text = document.createTextNode(obj[i].Category);
         //    tag.appendChild(text);
@@ -324,4 +326,6 @@
              //add it to the ul element
         
     }
+    }
+
 
