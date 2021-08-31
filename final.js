@@ -286,7 +286,14 @@ var myData= document.getElementsByClassName("card");
         console.log(sel.value);
         for(let i=0;i<myData.length;i++)
         {
-        if(obj[i]["Operations State"]===sel.value)
+            if(sel.value==="All")
+            {
+                myData[i].style.display="block"
+           myData[i].classList.add("card");
+        cbody[i].innerText= obj[i]["Operations State"];
+        ctitle[i].innerText=obj[i]["Name of Organization "]
+            }
+       else if(obj[i]["Operations State"]===sel.value)
        { myData[i].style.display="block"
            myData[i].classList.add("card");
         cbody[i].innerText= obj[i]["Operations State"];
