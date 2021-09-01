@@ -479,8 +479,12 @@ for(let i=0;i<30;i++)
     var a = document.createElement('a'); 
     var link = document.createTextNode("Explore");
     a.appendChild(link); 
-    // a.title = "This is Link"; 
-    a.href = obj[i].link; 
+    // a.title = "This is Link";
+    if(obj[i].link==null)
+    {
+        a.href="Category/blank.html";
+    } 
+    else{a.href = obj[i].link; }
     a.target="_blank";
     a.classList.add("button");
     var image = document.createElement("img");
@@ -488,12 +492,8 @@ for(let i=0;i<30;i++)
     image.style.height="130px";
     image.style.borderRadius="20px";
     if(obj[i].image==null)
-    {
-        image.src="https://res.cloudinary.com/de4by5q8o/image/upload/v1630504438/ngo/ngo_za70pi.jpg";
-    }
-    else{
-        image.src=obj[i].image;
-    }
+    {image.src="https://res.cloudinary.com/de4by5q8o/image/upload/v1630504438/ngo/ngo_za70pi.jpg"; }
+    else{ image.src=obj[i].image;}
     tagIn.appendChild(image);
    tagIn.appendChild(head);
    tagIn.appendChild(para);
