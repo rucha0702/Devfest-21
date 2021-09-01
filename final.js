@@ -9,19 +9,21 @@ var obj = [
         "Operations State": "Uttar Pradesh",
         "Worked with any Japanese Organization ": "No",
         "Worked with any State or National Government ": "Yes",
-        "link" : "https://www.geeksforgeeks.org"
+        "link" : "https://www.geeksforgeeks.org",
+        "image" : "https://res.cloudinary.com/de4by5q8o/image/upload/v1630427509/ngo/helpage_india_rmvqld.jpg"
     },
     {
         "id":"2",
-        "Name of Organization ": "IndianRugbyFootball Union",
-        "Category": "A",
-        "Donor Partner": "International Agency",
-        "State of Registration": "Maharashtra",
-        "Thematic Area": "Health",
+        "Name of Organization ": "Drishtee Foundation",
+        // "Category": "A",
+        // "Donor Partner": "International Agency",
+        // "State of Registration": "Uttar Pradesh",
+        // "Thematic Area": "Health",
         "Operations State": "Uttar Pradesh",
-        "Worked with any Japanese Organization ": "Yes",
-        "Worked with any State or National Government ": "Yes",
-        "link" : "https://www.geeksforgeeks.org"
+        // "Worked with any Japanese Organization ": "Yes",
+        // "Worked with any State or National Government ": "Yes",
+        "link" : "http://drishteefoundation.org/",
+        "image" : "https://res.cloudinary.com/de4by5q8o/image/upload/v1630503694/ngo/drishtee_pafrew.png"
     },
     {
         "id":"3",
@@ -32,7 +34,9 @@ var obj = [
         "Thematic Area": "Livelihood",
         "Operations State": "Uttar Pradesh",
         "Worked with any Japanese Organization ": "Yes",
-        "Worked with any State or National Government ": "Yes"
+        "Worked with any State or National Government ": "Yes",
+        "link" : "https://www.helpageindia.org/",
+        "image" : "https://res.cloudinary.com/de4by5q8o/image/upload/v1630427509/ngo/helpage_india_rmvqld.jpg"
     },
     {
         "id":"4",
@@ -43,7 +47,9 @@ var obj = [
         "Thematic Area": "Health",
         "Operations State": "Uttar Pradesh",
         "Worked with any Japanese Organization ": "No",
-        "Worked with any State or National Government ": "Yes"
+        "Worked with any State or National Government ": "Yes",
+        "link" : "https://www.searchdonation.com/ngo/huda-educational-and-social-welfare-society.php",
+        "image" : "https://res.cloudinary.com/de4by5q8o/image/upload/v1630504438/ngo/ngo_za70pi.jpg"
     },
     {
         "id":"5",
@@ -54,7 +60,9 @@ var obj = [
         "Thematic Area": "Women empowerment",
         "Operations State": "Uttar Pradesh",
         "Worked with any Japanese Organization ": "Yes",
-        "Worked with any State or National Government ": "Yes"
+        "Worked with any State or National Government ": "Yes",
+        "link" : "https://www.humana-india.org/",
+        "image" : "https://res.cloudinary.com/de4by5q8o/image/upload/v1630500951/ngo/humana_ckfvhe.jpg"
     },
     {
         "id":"6",
@@ -131,7 +139,9 @@ var obj = [
         "Thematic Area": "Education",
         "Operations State": "Maharashtra",
         "Worked with any Japanese Organization ": "No",
-        "Worked with any State or National Government ": "No"
+        "Worked with any State or National Government ": "No",
+        "link" : "https://progressivelifecenter.org.in/",
+        "image" : "https://res.cloudinary.com/de4by5q8o/image/upload/v1630501339/ngo/progressive_life_odryqp.png"
     },
     {
         "id":"13",
@@ -142,7 +152,9 @@ var obj = [
         "Thematic Area": "Rural Development",
         "Operations State": "Odisha",
         "Worked with any Japanese Organization ": "No",
-        "Worked with any State or National Government ": "Yes"
+        "Worked with any State or National Government ": "Yes",
+        "link" : "https://ngopran.org/geographical-coverage/#",
+        "image" : "https://res.cloudinary.com/de4by5q8o/image/upload/v1630501552/ngo/PRAN_ipjhbn.jpg"
     },
     {
         "id":"14",
@@ -157,14 +169,16 @@ var obj = [
     },
     {
         "id":"15",
-        "Name of Organization ": "Pipal Tree Fdn.",
+        "Name of Organization ": "Pipal Tree Foundation",
         "Category": "B",
         "Donor Partner": "Corporate",
         "State of Registration": "Maharashtra",
         "Thematic Area": "Women empowerment",
         "Operations State": "Maharashtra",
         "Worked with any Japanese Organization ": "No",
-        "Worked with any State or National Government ": "Yes"
+        "Worked with any State or National Government ": "Yes",
+        "link" : "https://www.pipaltreefoundation.com/",
+        "image" : "https://res.cloudinary.com/de4by5q8o/image/upload/v1630501752/ngo/pipal_iducmd.png"
     },
     {
         "id":"16",
@@ -471,8 +485,15 @@ for(let i=0;i<30;i++)
     a.classList.add("button");
     var image = document.createElement("img");
     image.style.width="160px";
+    image.style.height="130px";
     image.style.borderRadius="20px";
-    image.src="https://res.cloudinary.com/de4by5q8o/image/upload/v1630427509/ngo/helpage_india_rmvqld.jpg";
+    if(obj[i].image==null)
+    {
+        image.src="https://res.cloudinary.com/de4by5q8o/image/upload/v1630504438/ngo/ngo_za70pi.jpg";
+    }
+    else{
+        image.src=obj[i].image;
+    }
     tagIn.appendChild(image);
    tagIn.appendChild(head);
    tagIn.appendChild(para);
