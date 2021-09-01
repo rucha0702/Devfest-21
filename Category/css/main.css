@@ -1,5 +1,5 @@
 :root {
-  --primary: #2BAFAF;
+  --primary: #2bafaf;
 }
 
 * {
@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
 }
 
 .sidebar {
@@ -135,7 +135,12 @@ body {
      object-fit: cover;
 }
 
-#sw ul, #ed ul, #fd ul, #wm ul, #sp ul, #re ul {
+#sw ul,
+#ed ul,
+#fd ul,
+#wm ul,
+#sp ul,
+#re ul {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,14 +153,19 @@ body {
           justify-content: center;
 }
 
-#sw ul li, #ed ul li, #fd ul li, #wm ul li, #sp ul li, #re ul li {
+#sw ul li,
+#ed ul li,
+#fd ul li,
+#wm ul li,
+#sp ul li,
+#re ul li {
   list-style: none;
 }
 
 .csec {
   right: 0;
   top: 15vh;
-  width: 85vw;
+  width: 80vw;
   margin-top: 15vh;
   float: right;
 }

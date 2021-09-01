@@ -24,9 +24,10 @@ body {
   color: white;
   background: #0f78e8;
   background-size: cover;
+  margin: 20px;
   margin-top: 20vh;
   margin-bottom: 5em;
-  padding: 10rem 0 0;
+  padding: 2.5rem 0 0;
   width: 22ch;
   height: 300px;
   border-radius: 1em;
@@ -60,6 +61,7 @@ body {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  font-size: 1.5rem;
 }
 
 .card_title::after {

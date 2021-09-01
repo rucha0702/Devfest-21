@@ -7,7 +7,8 @@ var obj = [
         "Thematic Area": "Rural Development",
         "Operations State": "Uttar Pradesh",
         "Worked with any Japanese Organization ": "No",
-        "Worked with any State or National Government ": "Yes"
+        "Worked with any State or National Government ": "Yes",
+        "link" : "https://www.geeksforgeeks.org"
     },
     {
         "Name of Organization ": "IndianRugbyFootball Union",
@@ -17,7 +18,8 @@ var obj = [
         "Thematic Area": "Health",
         "Operations State": "Uttar Pradesh",
         "Worked with any Japanese Organization ": "Yes",
-        "Worked with any State or National Government ": "Yes"
+        "Worked with any State or National Government ": "Yes",
+        "link" : "https://www.geeksforgeeks.org"
     },
     {
         "Name of Organization ": "HelpAge India",
@@ -249,12 +251,106 @@ var obj = [
         "Worked with any Japanese Organization ": "No",
         "Worked with any State or National Government ": "Yes"
     },
-
+    {
+        "Name of Organization ": "JAN KALYAN MAHA SAMITI",
+        "Category": "A",
+        "Donor Partner": "Corporate",
+        "State of Registration": "Uttar Pradesh",
+        "Thematic Area": "Agriculture",
+        "Operations State": "Uttar Pradesh",
+        "Worked with any Japanese Organization ": "No",
+        "Worked with any State or National Government ": "Yes"
+    },
+    {
+        "Name of Organization ": "JAN KALYAN MAHA SAMITI",
+        "Category": "A",
+        "Donor Partner": "Corporate",
+        "State of Registration": "Uttar Pradesh",
+        "Thematic Area": "Agriculture",
+        "Operations State": "Uttar Pradesh",
+        "Worked with any Japanese Organization ": "No",
+        "Worked with any State or National Government ": "Yes"
+    },
+    {
+        "Name of Organization ": "JAN KALYAN MAHA SAMITI",
+        "Category": "A",
+        "Donor Partner": "Corporate",
+        "State of Registration": "Uttar Pradesh",
+        "Thematic Area": "Agriculture",
+        "Operations State": "Uttar Pradesh",
+        "Worked with any Japanese Organization ": "No",
+        "Worked with any State or National Government ": "Yes"
+    },
+    {
+        "Name of Organization ": "JAN KALYAN MAHA SAMITI",
+        "Category": "A",
+        "Donor Partner": "Corporate",
+        "State of Registration": "Uttar Pradesh",
+        "Thematic Area": "Agriculture",
+        "Operations State": "Uttar Pradesh",
+        "Worked with any Japanese Organization ": "No",
+        "Worked with any State or National Government ": "Yes"
+    },
+    {
+        "Name of Organization ": "JAN KALYAN MAHA SAMITI",
+        "Category": "A",
+        "Donor Partner": "Corporate",
+        "State of Registration": "Uttar Pradesh",
+        "Thematic Area": "Agriculture",
+        "Operations State": "Uttar Pradesh",
+        "Worked with any Japanese Organization ": "No",
+        "Worked with any State or National Government ": "Yes"
+    },
+    {
+        "Name of Organization ": "JAN KALYAN MAHA SAMITI",
+        "Category": "A",
+        "Donor Partner": "Corporate",
+        "State of Registration": "Uttar Pradesh",
+        "Thematic Area": "Agriculture",
+        "Operations State": "Uttar Pradesh",
+        "Worked with any Japanese Organization ": "No",
+        "Worked with any State or National Government ": "Yes"
+    },
+    {
+        "Name of Organization ": "JAN KALYAN MAHA SAMITI",
+        "Category": "A",
+        "Donor Partner": "Corporate",
+        "State of Registration": "Uttar Pradesh",
+        "Thematic Area": "Agriculture",
+        "Operations State": "Uttar Pradesh",
+        "Worked with any Japanese Organization ": "No",
+        "Worked with any State or National Government ": "Yes"
+    },
+    {
+        "Name of Organization ": "JAN KALYAN MAHA SAMITI",
+        "Category": "A",
+        "Donor Partner": "Corporate",
+        "State of Registration": "Uttar Pradesh",
+        "Thematic Area": "Agriculture",
+        "Operations State": "Uttar Pradesh",
+        "Worked with any Japanese Organization ": "No",
+        "Worked with any State or National Government ": "Yes"
+    },
+    {
+        "Name of Organization ": "JAN KALYAN MAHA SAMITI",
+        "Category": "A",
+        "Donor Partner": "Corporate",
+        "State of Registration": "Uttar Pradesh",
+        "Thematic Area": "Agriculture",
+        "Operations State": "Uttar Pradesh",
+        "Worked with any Japanese Organization ": "No",
+        "Worked with any State or National Government ": "Yes"
+    }
+    
 ]
 var myData= document.getElementsByClassName("card");
 var ctitle= document.getElementsByClassName("card_title");
 var cbody= document.getElementsByClassName("card_body");
+var addCard = document.getElementById("list");
+var mul_card = document.getElementsByClassName("multiple_cards");
 
+    var sel = document.getElementById("dropdown");
+  
 for(let i=0;i<myData.length;i++)
 {
     // var sel = document.getElementById("dropdown");
@@ -276,12 +372,7 @@ for(let i=0;i<myData.length;i++)
     //     myData[i].style.display="none";
     // }
 }
-var myData= document.getElementsByClassName("card");
-    var ctitle= document.getElementsByClassName("card_title");
-    var cbody= document.getElementsByClassName("card_body");
-    var sel = document.getElementById("dropdown");
-  
-   
+    
     sel.onclick= function(){
         console.log(sel.value);
         for(let i=0;i<myData.length;i++)
@@ -290,27 +381,77 @@ var myData= document.getElementsByClassName("card");
             {
                 myData[i].style.display="block"
            myData[i].classList.add("card");
+           cbody[i].innerText= obj[i]["Operations State"];
+           ctitle[i].innerText=obj[i]["Name of Organization "]
+        }
+        else if(obj[i]["Operations State"]===sel.value)
+        { myData[i].style.display="block"
+        myData[i].classList.add("card");
         cbody[i].innerText= obj[i]["Operations State"];
         ctitle[i].innerText=obj[i]["Name of Organization "]
-            }
-       else if(obj[i]["Operations State"]===sel.value)
-       { myData[i].style.display="block"
-           myData[i].classList.add("card");
-        cbody[i].innerText= obj[i]["Operations State"];
-        ctitle[i].innerText=obj[i]["Name of Organization "]
-        }
-        else{
-            myData[i].style.display="none";
-        }
-            
-    
-        //    let tag = document.createElement("p");
-        //    let text = document.createTextNode(obj[i].Category);
-        //    tag.appendChild(text);
-        //    myData.appendChild(tag);
-    
-             //create new li element
-             //add it to the ul element
-        
     }
+    else{
+        myData[i].style.display="none";
     }
+    
+    
+    //    let tag = document.createElement("p");
+    //    let text = document.createTextNode(obj[i].Category);
+    //    tag.appendChild(text);
+    //    myData.appendChild(tag);
+    
+    //create new li element
+    //add it to the ul element
+    
+}
+}
+
+for(let i=0;i<30;i++)
+{
+    // document.createElement(mul_card[i]);
+    // mul_card[i].style.display="block";
+    // // mul_card.style.margin="20px";
+    // mul_card[i].style.padding="20px";
+    // // mul_card.style.height="200px";
+    // // mul_card.stykle.position="absolute";[i]
+    // mul_card[i].style.position="relative";
+    // // mul_card.style.zIndex="10";
+    // mul_card[i].style.background="blue";
+    
+    // mul_card[i].classList.add("card");
+    // cbody.innerText= obj[i]["Operations State"];
+    // ctitle.innerText=obj[i]["Name of Organization "]
+    // addCard.appendChild(mul_card[i]);
+
+    var tag = document.createElement("div");
+    var tagIn = document.createElement("div");
+    var head = document.createElement("h1");
+    var textHead = document.createTextNode(obj[i]["Name of Organization "]);
+    head.appendChild(textHead);
+    head.classList.add("card_title");
+    var para = document.createElement("p");
+    var textPara = document.createTextNode(obj[i]["Operations State"]);
+    para.appendChild(textPara);
+    para.classList.add("card_body");
+    // var link = document.createElement("a");
+    // link.href="/Category/blank.html";
+    // link.title="Explore";
+    var a = document.createElement('a'); 
+    var link = document.createTextNode("Explore");
+    a.appendChild(link); 
+    // a.title = "This is Link"; 
+    a.href = obj[i].link; 
+    a.target="_blank";
+    a.classList.add("button");
+   tagIn.appendChild(head);
+   tagIn.appendChild(para);
+   tagIn.appendChild(a);
+   tagIn.classList.add("card_content");
+   tag.appendChild(tagIn);
+   tag.classList.add("card")
+   addCard.appendChild(tag);
+   addCard.style.flexWrap="wrap";
+}
+var fragment = create('<div class="someclass"><a href="www.example.com"><p>some text</p></a></div>'); 
+
+document.body.insertBefore(fragment, document.body.childNodes[0]);

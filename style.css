@@ -263,11 +263,11 @@ a {
 }
 
 .csec {
-  width: 70vw;
+  width: 80vw;
   float: right;
   position: absolute;
   top: -100px;
-  left: 25vw;
+  left: 22vw;
   -webkit-transform: translateX(-40px);
   transform: translateX(-40px);
 }
