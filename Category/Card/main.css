@@ -25,9 +25,8 @@ body {
   background: #0f78e8;
   background-size: cover;
   margin: 20px;
-  margin-top: 20vh;
+  margin-top: 15vh;
   margin-bottom: 5em;
-  padding: 2.5rem 0 0;
   width: 22ch;
   height: 300px;
   border-radius: 1em;
@@ -107,8 +106,8 @@ body {
 
 @media (hover) {
   .card_content {
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
     -webkit-transition: -webkit-transform 500ms ease;
     transition: -webkit-transform 500ms ease;
     transition: transform 500ms ease;
@@ -116,19 +115,19 @@ body {
   }
   .card:hover .card_content,
   .card:focus-within .card_content {
-    -webkit-transform: translateY(-20%);
-            transform: translateY(-20%);
-    -webkit-transition-delay: 800ms;
-            transition-delay: 800ms;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transition-delay: 200ms;
+            transition-delay: 200ms;
   }
   .card:focus-within .card_content {
     -webkit-transition-duration: 0ms;
             transition-duration: 0ms;
   }
-  .card_content > *:not(.card_title) {
+  .card_content > *:not(.card_title, img) {
     opacity: 0;
-    -webkit-transition: opacity 500ms ease;
-    transition: opacity 500ms ease;
+    -webkit-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
   }
   .card:hover .card_content > *:not(.card_title),
   .card:focus-within .card_content > *:not(.card_title) {

@@ -18,10 +18,10 @@ body {
   background: #0f78e8;
   background-size: cover;
   margin: 20px;
-  margin-top: 20vh;
+  margin-top: 15vh;
   // margin-left:2em;
   margin-bottom: 5em;
-  padding: 2.5rem 0 0;
+
   width: 22ch;
   height: 300px;
   border-radius: 1em;
@@ -40,6 +40,7 @@ body {
 .card_content {
   --padding: 1.5rem;
   padding: var(--padding);
+  // transform: translateY(-20px);
   // transform: translateY(65%);
   p {
     margin-top: 10px;
@@ -89,22 +90,22 @@ body {
 
 @media (hover) {
   .card_content {
-    transform: translateY(50%);
+    transform: translateY(25%);
     transition: transform 500ms ease;
   }
   .card:hover .card_content,
   .card:focus-within .card_content {
-    transform: translateY(-20%);
-    transition-delay: 800ms;
+    transform: translateY(0);
+    transition-delay: 200ms;
   }
 
   .card:focus-within .card_content {
     transition-duration: 0ms;
   }
 
-  .card_content > *:not(.card_title) {
+  .card_content > *:not(.card_title, img) {
     opacity: 0;
-    transition: opacity 500ms ease;
+    transition: opacity 200ms ease;
   }
 
   .card:hover .card_content > *:not(.card_title),
