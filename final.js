@@ -387,6 +387,7 @@ var myData= document.getElementsByClassName("card");
 var ctitle= document.getElementsByClassName("card_title");
 var cbody= document.getElementsByClassName("card_body");
 var addCard = document.getElementById("list");
+var addCard2 = document.getElementById("list2");
 var mul_card = document.getElementsByClassName("multiple_cards");
 
     var sel = document.getElementById("dropdown");
@@ -448,20 +449,6 @@ for(let i=0;i<myData.length;i++)
 
 for(let i=0;i<30;i++)
 {
-    // document.createElement(mul_card[i]);
-    // mul_card[i].style.display="block";
-    // // mul_card.style.margin="20px";
-    // mul_card[i].style.padding="20px";
-    // // mul_card.style.height="200px";
-    // // mul_card.stykle.position="absolute";[i]
-    // mul_card[i].style.position="relative";
-    // // mul_card.style.zIndex="10";
-    // mul_card[i].style.background="blue";
-    
-    // mul_card[i].classList.add("card");
-    // cbody.innerText= obj[i]["Operations State"];
-    // ctitle.innerText=obj[i]["Name of Organization "]
-    // addCard.appendChild(mul_card[i]);
 
     var tag = document.createElement("div");
     var tagIn = document.createElement("div");
@@ -504,6 +491,4 @@ for(let i=0;i<30;i++)
    addCard.appendChild(tag);
    addCard.style.flexWrap="wrap";
 }
-var fragment = create('<div class="someclass"><a href="www.example.com"><p>some text</p></a></div>'); 
 
-document.body.insertBefore(fragment, document.body.childNodes[0]);
